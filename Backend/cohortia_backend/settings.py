@@ -80,8 +80,8 @@ WSGI_APPLICATION = 'cohortia_backend.wsgi.application'
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
 
 DATABASES = {
-    'default': dj_database_url.parse(
-        os.environ.get("postgresql://cohortia_db_user:ng6srDeBpc9e56KNV6V0qgdE7wgGZxGq@dpg-d88lvs3eo5us73831mv0-a.oregon-postgres.render.com/cohortia_db")
+    'default': dj_database_url.config(
+        default=os.environ.get("postgresql://cohortia_db_user:ng6srDeBpc9e56KNV6V0qgdE7wgGZxGq@dpg-d88lvs3eo5us73831mv0-a.oregon-postgres.render.com/cohortia_db")
     )
 }
 
