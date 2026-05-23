@@ -81,7 +81,7 @@ WSGI_APPLICATION = 'cohortia_backend.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.parse(
-        os.environ.get("DATABASE_URL")
+        os.environ.get("postgresql://cohortia_db_user:ng6srDeBpc9e56KNV6V0qgdE7wgGZxGq@dpg-d88lvs3eo5us73831mv0-a.oregon-postgres.render.com/cohortia_db")
     )
 }
 
